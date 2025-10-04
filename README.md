@@ -14,10 +14,6 @@ Give it a URL and a prompt like "get all emails" or "extract phone numbers" and 
 - Playwright (anti-bot handling)
 - BeautifulSoup (HTML parsing)
 
-**Frontend:**
-- React/Next.js (in `scraper-frontend/`)
-- Simple UI, no auth BS
-
 ## Setup
 
 ### Option 1: Docker (Recommended)
@@ -114,23 +110,6 @@ Handles both static sites (requests) and dynamic sites (Playwright). Auto-detect
 - Returns JSON or CSV
 - No rate limits on usage (but Gemini API has limits)
 - No login/signup required - free for all
-
-## Project Structure
-
-```
-scraper-backend/
-├── app/
-│   ├── main.py          # FastAPI app
-│   ├── llm.py           # Gemini integration
-│   ├── scraper.py       # Scraping utils
-│   └── executor.py      # Code execution
-├── requirements.txt
-└── README.md
-
-scraper-frontend/
-├── (React/Next.js app)
-└── README.md
-```
 
 ## Notes
 
